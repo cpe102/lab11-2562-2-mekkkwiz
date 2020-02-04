@@ -3,6 +3,7 @@
 using namespace std;
 
 //Write prototype of function fibonacci() here
+long long int fibonacci(int x);
 
 int main(){
 	cout << fibonacci(0) << "\n";
@@ -15,10 +16,20 @@ int main(){
 	return 0;
 }
 
-
-//Write definition of function fibonacci() here
-/*
-??? fibonacci(???){
-  
+long long int fibonacci(int n) 
+{	
+	if (n > 1)
+	{
+		return fibonacci(n - 1) + fibonacci(n - 2);
+	}
+	else if (n == 0)
+	{
+		return 0;
+	}
+	else if (n == 1)
+	{
+		return 1;
+	}
+	
 }
-*/
+
